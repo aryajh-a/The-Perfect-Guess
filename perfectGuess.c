@@ -31,13 +31,13 @@ int main()
                 printf("HIGHER NUMBER PLEASE :\n");
 
         } while (num != Rnumber);
-        if (count < min)
+        if (count < min)    // to find the winner
         {
             min = count;
             strcpy(winner, user);
         }
         printf("CORRECT! %s GUESSED IT IN %d ATTEMPTS\n", user, loop);
     }
-    printf("WINNER : %s", winner);
+    printf("WINNER : %s", winner);   // prints name of the winner
     return 0;
 }
